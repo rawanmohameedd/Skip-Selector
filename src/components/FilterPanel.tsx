@@ -42,7 +42,9 @@ export const FilterPanel: React.FC<{
 
         {/* Price Range */}
         <div className="flex flex-col space-y-2">
-          <label className="text-sm text-gray-700">Max Price: £{filters.priceRange[1]}</label>
+            <label className="text-sm text-gray-700">
+            Max Price: £{filters.priceRange[1].toFixed(2)}
+            </label>
           <input
             type="range"
             min={priceRange[0]}
